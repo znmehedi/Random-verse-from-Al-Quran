@@ -1,7 +1,7 @@
 # Random-verse-from-Al-Quran
 
 Random verse generator from Al Quran.
-Simple html css and javascript used to build 
+Html css and javascript used to build 
 this web application.
 
 # Live website link: https://www.alquran.znmehedi.com/
