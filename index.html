@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="assets\alquran.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Random Quran verse</title>
+</head>
+<body onload="randomVerseFunction()">
+
+<div class="allContents" id="fullCanvas">
+
+    <div class="headingDiv">
+        <h1 class="heading">
+            Random verse from Al-Quran</h1>
+    </div>
+    <div class="ayahDiv">
+        <h2 class="arabicLang" id="arabicLanguage">
+            بسم الله الرحمن الرحيم
+        </h2>
+        <h3 class="otherLang" id="otherLanguage">
+            "In the name of God, the Most Gracious, the Most Merciful".
+        </h3>
+    </div>
+    <div class="ayahInfo">
+        <h4 class="suraInfo" id='suraInfoId'> Sura Info</h4>
+    </div>
+    <div class="divNavigate">
+        <select id="language" onChange="languageSelectFunction()"
+        class="languageSelector">
+            <option class="SelectorOption"value="en">English</option>
+            <option value="SelectorOption">বাংলা</option>
+          </select>
+        <button onclick="randomVerseFunction()" 
+            class="randomVerseBTN"
+            id="randomVerse">
+            Random Verse
+        </button>
+        <button onclick="playVerseFunction()"
+            class="playMusicBTN"
+            id="versePlay">
+            Play
+        </button>
+    </div>
+    <div class="share_download" id="shareB">
+
+        <button class="shareBTN_F"
+            >
+            <i class="fab fa-facebook-f"></i>
+        </button>
+        <button class="shareBTN_T"
+        >
+        <i class="fab fa-twitter"></i>
+        </button>
+        <button onclick="downloadImage()" class="shareBTN_D" 
+        >
+        <i class="fas fa-cloud-download-alt"></i>
+        </button>
+    </div>
+    
+    
+    
+</div>
+<footer class="footer">
+            <p class="myInfo">Developed by <a class='fblink' href="https://www.facebook.com/znmehedi/" target="_blank">Mehedi Hasan</a></p>
+</footer> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
