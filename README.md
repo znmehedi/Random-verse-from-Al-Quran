@@ -11,5 +11,6 @@ Outcome:
 * Play audio in website
 * Download html document by node cdn
 
-API used from https://alquran.cloud/api
-For saving file from website dom-to-image and FileSaver CDN used.
+Resource:
+* API used from https://alquran.cloud/api
+* For saving file from website dom-to-image and FileSaver CDN used.
