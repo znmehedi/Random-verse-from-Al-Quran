@@ -115,5 +115,5 @@ a{
     transform: scale(1.1);
 }
 .linkShareTag{
-    text-decoration: none;
+    text-decoration: none!important;
 }
